@@ -6,11 +6,11 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import IconButton from '@mui/material/IconButton';
 // import Typography from '@mui/material/Typography';
 import Tooltip from '@mui/material/Tooltip';
-// import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
+import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import DeleteOutlinedIcon from '@mui/icons-material/DeleteOutlined';
 import PowerSettingsNewOutlinedIcon from '@mui/icons-material/PowerSettingsNewOutlined';
-import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
-import VerDetalle from './VerDatalle.tsx';
+// import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
+
 export default function AccountMenu() {
 
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
@@ -21,6 +21,7 @@ export default function AccountMenu() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  
   return (
     <React.Fragment>
       <Box sx={{ display: 'flex', alignItems: 'center', textAlign: 'center' }}>
@@ -34,7 +35,7 @@ export default function AccountMenu() {
             aria-expanded={open ? 'true' : undefined}
             className="icon-bg-color"
           >
-        <MoreVertOutlinedIcon />
+        {/* <MoreVertOutlinedIcon /> */}
           </IconButton>
         </Tooltip>
       </Box>
@@ -74,13 +75,13 @@ export default function AccountMenu() {
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
      
-     {/* <MenuItem  onClick={VerDetalle}  >
+     <MenuItem   >
           <ListItemIcon  >
           <RemoveRedEyeOutlinedIcon fontSize="small" />
           </ListItemIcon> 
           Ver Detalle
-        </MenuItem> */}
-        <VerDetalle/>
+        </MenuItem>
+ 
         <MenuItem>
           <ListItemIcon>
             <PowerSettingsNewOutlinedIcon fontSize="small" />

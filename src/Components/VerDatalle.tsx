@@ -5,12 +5,13 @@ import Modal from '@mui/material/Modal';
 // import Grid from '@mui/material/Grid';
 import BasicTabs from './BasicTabs.tsx';
 // import CampaignOutlinedIcon from '@mui/icons-material/CampaignOutlined';
-import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
-// import IconButton from '@mui/material/IconButton';
+// import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
+import IconButton from '@mui/material/IconButton';
 // import Menu from '@mui/material/Menu';
-import MenuItem from '@mui/material/MenuItem';
-import ListItemIcon from '@mui/material/ListItemIcon';
+// import MenuItem from '@mui/material/MenuItem';
+// import ListItemIcon from '@mui/material/ListItemIcon';
 import ButtonFloat from './ButtonFloat.tsx';
+import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
 
 
 const style = {
@@ -37,6 +38,7 @@ export default function FullScreenNestedModal() {
   const handleClose = () => {
     setOpen(false);
   };
+  
 
   return (
     <div style={{padding:'0px'}} >
@@ -44,13 +46,16 @@ export default function FullScreenNestedModal() {
       {/* <IconButton onClick={handleOpen}>
         <RemoveRedEyeOutlinedIcon/>
         </IconButton> */}
- 
+{/*  
         <MenuItem onClick={handleOpen} >
           <ListItemIcon  >
           <RemoveRedEyeOutlinedIcon fontSize="small" />
           </ListItemIcon>
           Ver Detalle
-        </MenuItem>
+        </MenuItem> */}
+         <IconButton onClick={handleOpen}  className="icon-bg-color">
+                          <MoreVertOutlinedIcon/>
+                        </IconButton>
 
       <Modal 
         open={open}
@@ -58,7 +63,7 @@ export default function FullScreenNestedModal() {
       >
         <Box sx={{ ...style, width: 1600 }}>
 
-        <ButtonFloat/>
+        <ButtonFloat onClick={handleClose}/>
 
   
 

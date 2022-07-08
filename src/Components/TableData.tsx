@@ -24,6 +24,8 @@ import SimCardDownloadOutlinedIcon from "@mui/icons-material/SimCardDownloadOutl
 import Chip from "@mui/material/Chip";
 import Tooltips from "./TooltipsVer.tsx";
 import VerDetalle from "./VerDatalle.tsx";
+// import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
+
 
 interface Data {
   calories: number;
@@ -316,6 +318,10 @@ const EnhancedTableToolbar = (props: EnhancedTableToolbarProps) => {
           <FileDownloadOutlinedIcon />
         </IconButton>
       </Tooltip>
+
+
+
+
     </Toolbar>
   );
 };
@@ -458,6 +464,11 @@ export default function EnhancedTable() {
                       </TableCell>
                       <TableCell align="left">
                         {row.ver}
+                      
+<VerDetalle/>
+                        {/* <IconButton className="icon-bg-color">
+                          <MoreVertOutlinedIcon/>
+                        </IconButton> */}
                         <Tooltips />
                       </TableCell>
                     </TableRow>
@@ -485,7 +496,7 @@ export default function EnhancedTable() {
           onRowsPerPageChange={handleChangeRowsPerPage}
         />
       </Paper>
-      <VerDetalle />
+      {/* <VerDetalle /> */}
  
     </Box>
   );
