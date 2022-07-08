@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.button {
+  margin-bottom: 30px;
+
+  & {
+    justify-content: end;
+  }
+}
+
+.bg-color {
+  background-color: black;
+}
+
+.nav-bg-color {
+  background-color: white !important;
+}
+
+// START CLASS TABLE
+.label-font-w {
+  font-weight: 900;
+}
+
+.icon-bg-color {
+  color: #2563eb !important;
+}
+
+.App {
+  background-color: #fafbff;
+}
+
+.btn-search-input {
+  display: flex;
+}
+
+.search {
+  width: 13%;
+  margin: 3rem 0rem 1rem 0rem;
+
+  // FINISH CLASS TABLE
+}
+
+.split-btn {
+  color: #fff !important;
+  border: 0px !important;
+
+
+}
+
+.split-btn-group {
+  position: relative;
+  right: 4rem;
+}
+
+.space-bottom {
+  margin-bottom: 3rem;
+}
+
+.txt-color-nav {
+  color: #1E293B;
+}
+
+.f-end-avatar {
+  justify-content: end;
+}
+
+.bg-icon-avatar-rigth {
+  background-color: #F97316 !important;
+}
+
+.bg-chip-small {
+  background-color: #0EA5E9 !important;
+  color: #fff !important;
+}
+
+.w-container {
+  max-width: 100% !important;
+}
+
+.container-p {
+  padding: 1px !important;
+}
+
+.p-switch {
+  padding-bottom: 20px;
+}
+
+.p-grid-datos {
+  padding-top: 20px;
+}
+
+.font-syles-h6 {
+  font-weight: 600;
+  font-size: 16px;
+  color: #455A64;
+}
