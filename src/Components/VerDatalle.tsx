@@ -10,18 +10,19 @@ import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 // import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import ListItemIcon from '@mui/material/ListItemIcon';
+import ButtonFloat from './ButtonFloat.tsx';
 
 
 const style = {
   position: 'absolute' as 'absolute',
-  top: '55%',
+  top: '62%',
   left: '60%',
   transform: 'translate(-50%, -50%)',
   bgcolor: 'background.paper',
   // border: '2px solid #000',
   boxShadow: 24,
-  borderRadius: 17,
-  pt: 18,
+  borderRadius: 6,
+  pt: 3,
   px: 4,
   pb: 1,
 };
@@ -57,7 +58,7 @@ export default function FullScreenNestedModal() {
       >
         <Box sx={{ ...style, width: 1600 }}>
 
-
+        <ButtonFloat/>
 
   
 

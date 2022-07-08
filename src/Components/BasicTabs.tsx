@@ -11,6 +11,7 @@ import SelectField from "./SelectField.tsx";
 import SwitchLabel from "./SwitchLabel.tsx";
 import ButtonSave from "./ButtonSave.tsx";
 import CampaignOutlinedIcon from '@mui/icons-material/CampaignOutlined';
+import MoreHorizOutlinedIcon from '@mui/icons-material/MoreHorizOutlined';
 
 
 interface TabPanelProps {
@@ -61,7 +62,12 @@ export default function BasicTabs() {
     <CssBaseline>
   
     <Box sx={{p: 3 , width: "100%" }}>
-    <Typography variant="h6" component="h2"   sx={{
+
+            
+
+                <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2}}>
+        <Grid item xs={6}>
+        <Typography variant="h6" component="h2"   sx={{
                   pb: 4,
                   fontSize: 20,
                   fontWeight: 600,
@@ -71,6 +77,15 @@ export default function BasicTabs() {
 
     &nbsp; &nbsp;Nombre de Campaña
                 </Typography>
+        </Grid>
+        <Grid item xs={6} sx={{display:'flex',justifyContent: 'end'}}>
+        <MoreHorizOutlinedIcon  className='icon-bg-color'  />
+        </Grid>
+      
+      
+      </Grid>
+
+
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs
           value={value}

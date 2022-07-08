@@ -24,7 +24,7 @@ function App() {
 
 
     <SideBar/>
-<Box component="main" sx={{ flexGrow: 1, p: 17 }}>
+<Box component="main" sx={{ flexGrow: 1, padding: '9rem', paddingRight:'65px' }}>
 
 <Grid className='space-bottom' container spacing={1}>
 

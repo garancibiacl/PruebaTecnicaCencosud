@@ -392,7 +392,7 @@ export default function EnhancedTable() {
         <TableContainer>
       
           <Table
-            sx={{ minWidth: 750 }}
+            sx={{ minWidth: 850 }}
             aria-labelledby="tableTitle"
             size={dense ? 'small' : 'medium'}
           >
