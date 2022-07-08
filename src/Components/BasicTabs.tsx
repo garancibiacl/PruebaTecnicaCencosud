@@ -12,6 +12,7 @@ import SwitchLabel from "./SwitchLabel.tsx";
 import ButtonSave from "./ButtonSave.tsx";
 import CampaignOutlinedIcon from '@mui/icons-material/CampaignOutlined';
 
+
 interface TabPanelProps {
 
   index: number;
@@ -56,30 +57,41 @@ export default function BasicTabs() {
   };
 
   return (
+    
     <CssBaseline>
+  
     <Box sx={{p: 3 , width: "100%" }}>
-              <h3 id="parent-modal-title">   <CampaignOutlinedIcon className='icon-bg-color'  /> &nbsp;Nombre de campaña</h3>
+    <Typography variant="h6" component="h2"   sx={{
+                  pb: 4,
+                  fontSize: 20,
+                  fontWeight: 600,
+                  letterSpacing: 1,
+                                  }}>
+    <CampaignOutlinedIcon className='icon-bg-color'  />
+
+    &nbsp; &nbsp;Nombre de Campaña
+                </Typography>
       <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
         <Tabs
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
         >
-          <Tab label="Információn" {...a11yProps(0)} />
+          <Tab sx={{ fontWeight: '700'}}  label="Információn" {...a11yProps(0)} />
           <Tab label="retroplanning" {...a11yProps(1)} />
           <Tab label="promociones vinculadas" {...a11yProps(2)} />
         </Tabs>
       </Box>
       <TabPanel value={value} index={0}>
- 
+  
 
           <Box sx={{ flexGrow: 1, height: "100vh", width: "100" }}>
             <Grid container spacing={1}>
-              <Grid item xs>
-                <Typography className="font-syles-h6" variant="h6" component="h2" style={{ color: '#455A64'}}>
+              <Grid item xs={12} sx={{pb:2}}  >
+                <Typography  variant="h6" component="h2" sx={{color: '#455A64;', fontWeight: '700', fontSize: '2'}} >
                   Segmentación
                 </Typography>
-                <Divider />
+                <Divider  />
               </Grid>
 
               <Grid
@@ -96,8 +108,8 @@ export default function BasicTabs() {
             </Grid>
 
             <Grid className="p-grid-datos" container spacing={1}>
-              <Grid item xs={12}>
-                <Typography variant="h6" component="h2">
+              <Grid item xs={12} sx={{pb:2}} >
+                <Typography variant="h6" component="h2" sx={{color: '#455A64;', fontWeight: '700', fontSize: '2'}}>
                   Datos Generales
                 </Typography>
                 <Divider />

@@ -10,7 +10,6 @@ import SplitButton from './Components/SplitButton.tsx';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import VerDetalle from './Components/VerDatalle.tsx';
 
 
 
@@ -25,8 +24,8 @@ function App() {
 
 
     <SideBar/>
-<Box component="main" sx={{ flexGrow: 1, p: 20 }}>
-<VerDetalle/>
+<Box component="main" sx={{ flexGrow: 1, p: 17 }}>
+
 <Grid className='space-bottom' container spacing={1}>
 
 <Grid container item xs={1}>

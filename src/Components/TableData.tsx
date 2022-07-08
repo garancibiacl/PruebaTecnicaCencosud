@@ -25,6 +25,7 @@ import ButtonSearch from './ButtonSearch.tsx';
 import SimCardDownloadOutlinedIcon from '@mui/icons-material/SimCardDownloadOutlined';
 import Chip from '@mui/material/Chip';
 import Tooltips from './TooltipsVer.tsx';
+import VerDetalle from './VerDatalle.tsx';
 
 
 
@@ -254,6 +255,7 @@ const EnhancedTableToolbar = (props: EnhancedTableToolbarProps) => {
 
 
   return (
+    
     <Toolbar
       sx={{
         pl: { sm: 2 },
@@ -264,6 +266,7 @@ const EnhancedTableToolbar = (props: EnhancedTableToolbarProps) => {
         }),
       }}
     >
+     
       {numSelected > 0 ? (
         <Typography
           sx={{ flex: '1 1 100%' }}
@@ -282,7 +285,7 @@ const EnhancedTableToolbar = (props: EnhancedTableToolbarProps) => {
           id="tableTitle"
           component="div"
         >
-            <ButtonSearch  className='btn-search-input'/>
+                 <ButtonSearch  />
         </Typography>
     
   
@@ -309,6 +312,7 @@ const EnhancedTableToolbar = (props: EnhancedTableToolbarProps) => {
         </IconButton>
         </Tooltip>
     </Toolbar>
+    
   );
 };
 
@@ -382,9 +386,11 @@ export default function EnhancedTable() {
   return (
     
     <Box sx={{ width: '100%' }}>
-      <Paper sx={{ width: '100%', mb: 2 }}>
+ 
+      <Paper sx={{ width: '100%', mb: 2, p: 3, m: 1, }}>
         <EnhancedTableToolbar numSelected={selected.length} />
         <TableContainer>
+      
           <Table
             sx={{ minWidth: 750 }}
             aria-labelledby="tableTitle"
@@ -482,10 +488,12 @@ export default function EnhancedTable() {
           onRowsPerPageChange={handleChangeRowsPerPage}
         />
       </Paper>
+      <VerDetalle/>
       <FormControlLabel
         control={<Switch checked={dense} onChange={handleChangeDense} />}
         label="Dense padding"
       />
+   
     </Box>
   );
 }
