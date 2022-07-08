@@ -74,13 +74,13 @@ export default function AccountMenu() {
         anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
       >
      
-
-     <MenuItem>
-          <ListItemIcon>
-        
-            <VerDetalle  fontSize="small" />
-            </ListItemIcon>
-        </MenuItem>
+     {/* <MenuItem  onClick={VerDetalle}  >
+          <ListItemIcon  >
+          <RemoveRedEyeOutlinedIcon fontSize="small" />
+          </ListItemIcon> 
+          Ver Detalle
+        </MenuItem> */}
+        <VerDetalle/>
         <MenuItem>
           <ListItemIcon>
             <PowerSettingsNewOutlinedIcon fontSize="small" />

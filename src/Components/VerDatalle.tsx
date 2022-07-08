@@ -15,7 +15,7 @@ import ButtonFloat from './ButtonFloat.tsx';
 
 const style = {
   position: 'absolute' as 'absolute',
-  top: '62%',
+  top: '62.5%',
   left: '60%',
   transform: 'translate(-50%, -50%)',
   bgcolor: 'background.paper',
