@@ -12,6 +12,7 @@ import IconButton from '@mui/material/IconButton';
 // import ListItemIcon from '@mui/material/ListItemIcon';
 import ButtonFloat from './ButtonFloat.tsx';
 import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
+import Tooltip from "@mui/material/Tooltip";
 
 
 const style = {
@@ -53,9 +54,13 @@ export default function FullScreenNestedModal() {
           </ListItemIcon>
           Ver Detalle
         </MenuItem> */}
-         <IconButton onClick={handleOpen}  className="icon-bg-color">
+
+<Tooltip title="Ver detalle">
+<IconButton onClick={handleOpen}  className="icon-bg-color">
                           <MoreVertOutlinedIcon/>
                         </IconButton>
+        </Tooltip>
+      
 
       <Modal 
         open={open}

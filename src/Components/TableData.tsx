@@ -26,7 +26,6 @@ import Tooltips from "./TooltipsVer.tsx";
 import VerDetalle from "./VerDatalle.tsx";
 // import MoreVertOutlinedIcon from '@mui/icons-material/MoreVertOutlined';
 
-
 interface Data {
   calories: number;
   carbs: number;
@@ -464,8 +463,9 @@ export default function EnhancedTable() {
                       </TableCell>
                       <TableCell align="left">
                         {row.ver}
-                      
-<VerDetalle/>
+           <VerDetalle/>
+                          
+                     
                         {/* <IconButton className="icon-bg-color">
                           <MoreVertOutlinedIcon/>
                         </IconButton> */}
