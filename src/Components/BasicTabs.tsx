@@ -101,7 +101,7 @@ export default function BasicTabs() {
                 <Typography
                   variant="h6"
                   component="h2"
-                  sx={{ color: "#455A64;", fontWeight: "700", fontSize: "2" }}
+                  sx={{ color: "#455A64;", fontWeight: "700", fontSize: "16px" }}
                 >
                   Segmentación
                 </Typography>
@@ -126,7 +126,7 @@ export default function BasicTabs() {
                 <Typography
                   variant="h6"
                   component="h2"
-                  sx={{ color: "#455A64;", fontWeight: "700", fontSize: "2" }}
+                  sx={{ color: "#455A64;", fontWeight: "700", fontSize: "16px" }}
                 >
                   Datos Generales
                 </Typography>
