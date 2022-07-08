@@ -39,15 +39,15 @@ export default function FullScreenNestedModal() {
   const handleClose = () => {
     setOpen(false);
   };
-  
+
 
   return (
-    <div style={{padding:'0px'}} >
+    <div style={{ padding: '0px' }} >
       {/* <Button onClick={handleOpen}>Open modal</Button> */}
       {/* <IconButton onClick={handleOpen}>
         <RemoveRedEyeOutlinedIcon/>
         </IconButton> */}
-{/*  
+      {/*  
         <MenuItem onClick={handleOpen} >
           <ListItemIcon  >
           <RemoveRedEyeOutlinedIcon fontSize="small" />
@@ -55,27 +55,27 @@ export default function FullScreenNestedModal() {
           Ver Detalle
         </MenuItem> */}
 
-<Tooltip title="Ver detalle">
-<IconButton onClick={handleOpen}  className="icon-bg-color">
-                          <MoreVertOutlinedIcon/>
-                        </IconButton>
-        </Tooltip>
-      
+      <Tooltip title="Ver detalle">
+        <IconButton onClick={handleOpen} className="icon-bg-color">
+          <MoreVertOutlinedIcon />
+        </IconButton>
+      </Tooltip>
 
-      <Modal 
+
+      <Modal
         open={open}
         onClose={handleClose}
       >
         <Box sx={{ ...style, width: 1600 }}>
 
-        <ButtonFloat onClick={handleClose}/>
+          <ButtonFloat onClick={handleClose} />
 
-  
 
-        <BasicTabs/>
-  
-            {/* <CampaignOutlinedIcon className='icon-bg-color'  /> */}
-  
+
+          <BasicTabs />
+
+          {/* <CampaignOutlinedIcon className='icon-bg-color'  /> */}
+
         </Box>
       </Modal>
     </div>

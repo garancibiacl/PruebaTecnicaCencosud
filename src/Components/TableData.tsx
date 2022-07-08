@@ -463,9 +463,7 @@ export default function EnhancedTable() {
                       </TableCell>
                       <TableCell align="left">
                         {row.ver}
-           <VerDetalle/>
-                          
-                     
+                        <VerDetalle/>
                         {/* <IconButton className="icon-bg-color">
                           <MoreVertOutlinedIcon/>
                         </IconButton> */}
