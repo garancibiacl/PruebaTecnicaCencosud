@@ -39,7 +39,7 @@ export default function FullScreenNestedModal() {
   };
 
   return (
-    <div >
+    <div style={{padding:'0px'}} >
       {/* <Button onClick={handleOpen}>Open modal</Button> */}
       {/* <IconButton onClick={handleOpen}>
         <RemoveRedEyeOutlinedIcon/>
